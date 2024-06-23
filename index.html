@@ -8,21 +8,24 @@
     <script type="module" src="scripts/index.js"></script>
   </head>
   <body>
-    <button class="js-start-race">Наступний заїзд</button>
-    <hr />
-    <p class="js-winner"></p>
-    <p class="js-progress"></p>
-    <hr />
+    <section id="movies">
+      <details>
+        <summary>Додати новий фільм</summary>
+        <form data-id="new-movie">
+          <input type="text" name="title" placeholder="Title" />
+          <input type="text" name="genre" placeholder="Genre" />
+          <input type="text" name="director" placeholder="Director" />
+          <input type="number" name="year" placeholder="Year" />
 
-    <table class="js-results-table">
-      <thead>
-        <tr>
-          <th>Заїзд</th>
-          <th>Переможець</th>
-          <th>час</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+          <div class="edit-btns">
+            <button type="submit">Зберегти</button>
+          </div>
+        </form>
+      </details>
+      <h2>Список фільмів</h2>
+      <ul>
+        <li>Дані вантажаться</li>
+      </ul>
+    </section>
   </body>
 </html>
